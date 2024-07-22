@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.all {
+  width: 1200px;
+  height: 1000px;
+  box-shadow: 0 4px 8px rgba(219, 40, 40, 0.1);
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+img {
+  width: 200px;
+  height: 200px; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  border-radius: 10px;
+  display: block; /* or inline-block */
+  visibility: visible;
+}
+
+.contenier {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Dynamic number of columns */
+  gap: 16px; /* Space between items */
+  padding: 16px;
+  width: 670px; /* 50% of the viewport width */
+  margin: 0 auto; /* Center the grid */
+  float: left;
+  padding-left: 100px;
+}
+
+.btn-el {
+  position: relative;
+  bottom: 20px;
+  left: 30px;
+  /* Add some space between the image and the button */
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.cart-item img {
+  width: 20px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+.cart-summary {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.btn-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  background-color: hsl(14, 86%, 42%);
+  color: #ccc;
+  border-radius: 30px;
+  margin: 50px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
